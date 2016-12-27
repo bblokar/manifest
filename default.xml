@@ -18,6 +18,9 @@
 
   <remote  name="yashar"
 	   fetch="https://github.com/nougat-hammerhead" />
+	
+  <remote  name="devices"
+	   fetch="https://github.com/EuclideanOS-Devices" />
 
   <default revision="refs/tags/android-7.1.1_r6"
            remote="aosp"
