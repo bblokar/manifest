@@ -53,6 +53,7 @@
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="pure" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="eucos" />
   <project path="system/extras" name="android_system_extras" groups="pdk" remote="pure" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="pure" revision="android-7.1" />
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="eucos" />
   <project path="system/vold" name="android_system_vold" remote="eucos" /> 
   <project path="vendor/eucos" name="android_vendor_eucos" remote="eucos" >
@@ -68,7 +69,6 @@
   <project path="vendor/opengapps/sources/x86_64" name="opengapps/x86_64" clone-depth="1" revision="master" remote="github" /> <!-- necessary for: x86_64 -->
 
   <!-- Hardware Repo's -->
-  <project path="hardware/broadcom/wlan" name="LineageOS/android_hardware_broadcom_wlan" remote="github" revision="cm-14.1" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="eucos" />
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="yashar" revision="7.1" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" remote="yashar" revision="7.1" />
@@ -380,6 +380,7 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
@@ -518,7 +519,6 @@
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/nativepower" name="platform/system/nativepower" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
