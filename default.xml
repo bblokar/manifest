@@ -78,6 +78,9 @@
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="du" revision="n7x" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="du" revision="n7x" />
 
+  <!-- Other Repo's -->
+  <project path="vendor/qcom/sdclang-3.8/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="github" revision="nougat-mr1" />
+
   <!-- AOSP Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
