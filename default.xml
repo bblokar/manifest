@@ -17,6 +17,8 @@
   <remote  name="du"
            fetch="https://github.com/DirtyUnicorns/"
 	   review="gerrit.dirtyunicorns.com" />
+  <remote  name="bb"
+	   fetch="https://bitbucket.org/" />
   <default revision="refs/tags/android-7.1.1_r6"
            remote="aosp"
            sync-c="true"
@@ -88,6 +90,9 @@
   <project path="external/jemalloc" name="AOSPA/android_external_jemalloc" remote="github" revision="nougat-mr1" />
   <project path="external/sqlite" name="AOSPA/android_external_sqlite" remote="github" revision="nougat-mr1" />
   <project path="external/zlib" name="AOSPA/android_external_zlib" remote="github" revision="nougat-mr1" />
+
+  <!-- Custom Toolchains Repo's -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" name="UBERTC/arm-eabi-5.3" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="AOSPA/android_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="github" revision="nougat-mr1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="AOSPA/android_gcc_linux-x86_arm-linux-android-4.9" remote="github" revision="nougat-mr1" />
   <project path="vendor/qcom/sdclang-3.8/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="github" revision="nougat-mr1" />
