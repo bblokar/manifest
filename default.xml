@@ -49,7 +49,7 @@
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="pure" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="pure" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="eucos" />
-  <project path="system/extras" name="android_system_extras" groups="pdk" remote="pure" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="eucos" />
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="eucos" />
   <project path="system/vold" name="android_system_vold" remote="eucos" /> 
   <project path="vendor/eucos" name="android_vendor_eucos" remote="eucos" >
