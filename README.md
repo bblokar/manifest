@@ -41,7 +41,7 @@ $ cd WORKSPACE
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
-$ repo init -u https://github.com/EuclideanOS/android_manifest -b nougat-mr1
+$ repo init -u https://github.com/EuclideanOS/manifest -b nougat-mr1
 ```
 
 ### Downloading the source tree ###
