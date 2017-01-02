@@ -26,6 +26,7 @@
   <project path="build" name="android_build" groups="pdk,tradefed" remote="eucos" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="bionic" name="android_bionic" remote="eucos" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="pure" />
   <project path="manifest" name="manifest" remote="eucos" />
   <project path="external/busybox" name="android_external_busybox" remote="pure" />
@@ -78,7 +79,6 @@
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="du" revision="n7x" />
 
   <!-- AOSPA Repo's -->
-  <project path="bionic" name="AOSPA/android_bionic" remote="github" revision="nougat-mr1" />
   <project path="build/kati" name="AOSPA/android_build_kati" remote="github" revision="nougat-mr1" />
   <project path="external/e2fsprogs" name="AOSPA/android_external_e2fsprogs" remote="github" revision="nougat-mr1" />
   <project path="external/f2fs-tools" name="AOSPA/android_external_f2fs-tools" remote="github" revision="nougat-mr1" />
