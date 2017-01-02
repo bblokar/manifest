@@ -26,13 +26,12 @@
   <project path="build" name="android_build" groups="pdk,tradefed" remote="eucos" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="pure" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="pure" />
   <project path="manifest" name="manifest" remote="eucos" />
   <project path="external/busybox" name="android_external_busybox" remote="pure" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="eucos" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="eucos" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="pure" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="eucos" />
   <project path="frameworks/support" name="android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="pure" />
   <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" groups="pdk-fs" remote="pure" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="pure" />
@@ -78,7 +77,17 @@
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="du" revision="n7x" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="du" revision="n7x" />
 
-  <!-- Other Repo's -->
+  <!-- AOSPA Repo's -->
+  <project path="bionic" name="AOSPA/android_bionic" remote="github" revision="nougat-mr1" />
+  <project path="build/kati" name="AOSPA/android_build_kati" remote="github" revision="nougat-mr1" />
+  <project path="external/e2fsprogs" name="AOSPA/android_external_e2fsprogs" remote="github" revision="nougat-mr1" />
+  <project path="external/f2fs-tools" name="AOSPA/android_external_f2fs-tools" remote="github" revision="nougat-mr1" />
+  <project path="external/libjpeg-turbo" name="AOSPA/android_external_libjpeg-turbo" remote="github" revision="nougat-mr1" />
+  <project path="external/libpng" name="AOSPA/android_external_libpng" remote="github" revision="nougat-mr1" />
+  <project path="external/skia" name="AOSPA/android_external_skia" remote="github" revision="nougat-mr1" />
+  <project path="external/jemalloc" name="AOSPA/android_external_jemalloc" remote="github" revision="nougat-mr1" />
+  <project path="external/sqlite" name="AOSPA/android_external_sqlite" remote="github" revision="nougat-mr1" />
+  <project path="external/zlib" name="AOSPA/android_external_zlib" remote="github" revision="nougat-mr1" />
   <project path="vendor/qcom/sdclang-3.8/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="github" revision="nougat-mr1" />
 
   <!-- AOSP Repo's -->
@@ -89,7 +98,6 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -151,7 +159,6 @@
   <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" />
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs,pdk-fs" />
@@ -161,7 +168,6 @@
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
   <project path="external/fec" name="platform/external/fec" />
   <project path="external/fio" name="platform/external/fio" groups="pdk-fs" />
@@ -201,7 +207,6 @@
   <project path="external/javassist" name="platform/external/javassist" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" />
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/jemalloc" name="platform/external/jemalloc" groups="pdk" />
   <project path="external/jetty" name="platform/external/jetty" groups="pdk-fs" />
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" />
@@ -230,7 +235,6 @@
   <project path="external/libgdx" name="platform/external/libgdx" groups="pdk" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/libhevc" name="platform/external/libhevc" groups="pdk-fs" />
-  <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="pdk" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmicrohttpd" name="platform/external/libmicrohttpd" />
   <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
@@ -242,7 +246,6 @@
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
   <project path="external/libunwind_llvm" name="platform/external/libunwind_llvm" />
@@ -309,7 +312,6 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
   <project path="external/sl4a" name="platform/external/sl4a" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
@@ -317,7 +319,6 @@
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
@@ -348,7 +349,6 @@
   <project path="external/xmlrpcpp" name="platform/external/xmlrpcpp" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
